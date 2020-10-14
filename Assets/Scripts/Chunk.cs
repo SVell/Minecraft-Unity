@@ -166,4 +166,17 @@ public class ChunkCoord
         x = _x;
         z = _z;
     }
+
+    public bool Equals(ChunkCoord other)
+    {
+        if (other == null) return false;
+        if (other.x == x && other.z == z)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
