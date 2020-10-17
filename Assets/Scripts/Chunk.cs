@@ -81,7 +81,8 @@ public class Chunk
             {
                 for (int z = 0; z < VoxelData.ChunkWidth; ++z)
                 {
-                    AddVoxelDataToChunck(new Vector3(x,y,z));
+                    if(world.blockTypes[voxelMap[x,y,z]].isSolid)
+                        AddVoxelDataToChunck(new Vector3(x,y,z));
                 }
             }
         }
