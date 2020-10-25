@@ -11,12 +11,13 @@ public class Chunk
     MeshRenderer meshRenderer;
     MeshFilter meshFilter;
     
+    
     int vertexIndex = 0;
     List<Vector3> vertices = new List<Vector3>();
     List<int> triangles = new List<int>();
     List<Vector2> uvs = new List<Vector2>();
     
-    byte[,,] voxelMap = new byte[VoxelData.ChunkWidth,VoxelData.ChunkHeight,VoxelData.ChunkWidth];
+    public byte[,,] voxelMap = new byte[VoxelData.ChunkWidth,VoxelData.ChunkHeight,VoxelData.ChunkWidth];
 
     private World world;
 
@@ -36,6 +37,7 @@ public class Chunk
         PopulateVoxelMap();
         CreateMeshData();
         CreateMesh();
+        
     }
 
     void PopulateVoxelMap()
