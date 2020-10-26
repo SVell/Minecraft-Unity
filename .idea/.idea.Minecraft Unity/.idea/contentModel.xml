@@ -9,6 +9,7 @@
         <e p="Scripts" t="Include">
           <e p="BiomAttributes.cs" t="Include" />
           <e p="Chunk.cs" t="Include" />
+          <e p="DebugScreen.cs" t="Include" />
           <e p="Noise.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="VoxelData.cs" t="Include" />
