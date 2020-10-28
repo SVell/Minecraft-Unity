@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using Random = System.Random;
 
@@ -45,8 +46,11 @@ public class World : MonoBehaviour
         {
             StartCoroutine(CreateChunks());
         }
+    }
+
+    private void FixedUpdate()
+    {
         playerChunkCoord = GetChunkCoordFromVector3(player.position);
-                 
         if (!playerChunkCoord.Equals(playerLastChunkCoord)) 
         { 
             CheckViewDistance();
@@ -76,6 +80,7 @@ public class World : MonoBehaviour
             chunks[chunksToCreate[0].x, chunksToCreate[0].z].Init();
             chunksToCreate.RemoveAt(0);
             yield return null;
+            yield return null;
         }
 
         isCreatingChunks = false;
@@ -87,7 +92,7 @@ public class World : MonoBehaviour
         int z = Mathf.FloorToInt(pos.z / VoxelData.ChunkWidth);
         return new ChunkCoord(x,z);
     }
-    
+
     void CheckViewDistance()
     {
         ChunkCoord coord = GetChunkCoordFromVector3(player.position);
@@ -103,7 +108,7 @@ public class World : MonoBehaviour
             {
                 if (IsChunkInWorld(new ChunkCoord(x,z)))
                 {
-                    // Check if it active, if not, activate it
+                    // Check if is active, if not, activate it
                     if (chunks[x, z] == null)
                     {
                         chunks[x,z] = new Chunk(new ChunkCoord(x,z),this,false);

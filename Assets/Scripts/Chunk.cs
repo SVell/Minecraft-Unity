@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -24,6 +25,8 @@ public class Chunk
     private bool _isActive;
     public bool isVoxelMapPopulated = false;
 
+    public bool wasInited = false;
+
     public Chunk(ChunkCoord _coord, World _world, bool generateOnLoad)
     {
         coord = _coord;
@@ -38,6 +41,7 @@ public class Chunk
 
     public void Init()
     {
+        wasInited = true;
         chunkObject = new GameObject();
         meshFilter = chunkObject.AddComponent<MeshFilter>();
         meshRenderer = chunkObject.AddComponent<MeshRenderer>();
@@ -118,7 +122,19 @@ public class Chunk
 
     public bool isActive
     {
-        get { return chunkObject.activeSelf; }
+        get
+        {
+            try
+            {
+                return chunkObject.activeSelf;
+            }
+            catch (NullReferenceException)
+            {
+                Debug.LogWarning("Chunk Initialization Error");
+            }
+
+            return true;
+        }
         set
         {
             _isActive = value;

@@ -36,13 +36,12 @@ public class Player : MonoBehaviour
     private void Update()
     {
         GetPlayerInput();
-        CalculateVelocity();
-        transform.Translate(velocity, Space.World);
+        
     }
 
     private void FixedUpdate()
     {
-        
+        CalculateVelocity();
         
         if (jumpRequest)
         {
@@ -51,8 +50,7 @@ public class Player : MonoBehaviour
         
         cam.Rotate(Vector3.right * -mouseVertical * mouseSensitivity);
         transform.Rotate(Vector3.up * mouseHorizontal * mouseSensitivity);
-        
-        
+        transform.Translate(velocity, Space.World);
     }
 
     void Jump()

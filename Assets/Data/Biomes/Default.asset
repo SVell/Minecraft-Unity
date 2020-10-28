@@ -15,7 +15,7 @@ MonoBehaviour:
   biomeName: Default
   solidGroundHeight: 42
   terrainHeight: 42
-  terrainScale: 0.25
+  terrainScale: 0
   loads:
   - nodeName: Dirt
     blockID: 5
