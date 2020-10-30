@@ -27,10 +27,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BiomAttributes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VoxelData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DebugScreen.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Chunk.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/World.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Toolbar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Chunk.cs" />
       </list>
     </option>
   </component>
@@ -81,7 +81,7 @@
       <workItem from="1603707608443" duration="9264000" />
       <workItem from="1603869574576" duration="6716000" />
       <workItem from="1603900121116" duration="4973000" />
-      <workItem from="1604084469896" duration="1634000" />
+      <workItem from="1604084469896" duration="3618000" />
     </task>
     <servers />
   </component>
