@@ -12,6 +12,7 @@
           <e p="DebugScreen.cs" t="Include" />
           <e p="Noise.cs" t="Include" />
           <e p="Player.cs" t="Include" />
+          <e p="Structure.cs" t="Include" />
           <e p="Toolbar.cs" t="Include" />
           <e p="VoxelData.cs" t="Include" />
           <e p="World.cs" t="Include" />
