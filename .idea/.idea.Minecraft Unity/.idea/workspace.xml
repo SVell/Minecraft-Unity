@@ -30,8 +30,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Toolbar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VoxelData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BiomAttributes.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Chunk.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Structure.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Chunk.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/World.cs" />
       </list>
     </option>
@@ -85,6 +85,7 @@
       <workItem from="1603900121116" duration="4973000" />
       <workItem from="1604084469896" duration="4336000" />
       <workItem from="1604147315009" duration="5994000" />
+      <workItem from="1604225281682" duration="5424000" />
     </task>
     <servers />
   </component>
@@ -94,9 +95,9 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="WindowStateProjectService">
-    <state x="392" y="182" width="672" height="676" key="search.everywhere.popup" timestamp="1603715593686">
+    <state x="392" y="182" width="672" height="676" key="search.everywhere.popup" timestamp="1604226550913">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="392" y="182" width="672" height="676" key="search.everywhere.popup/0.40.1920.1040/-1920.40.1920.1040@0.40.1920.1040" timestamp="1603715593686" />
+    <state x="392" y="182" width="672" height="676" key="search.everywhere.popup/0.40.1920.1040/-1920.40.1920.1040@0.40.1920.1040" timestamp="1604226550913" />
   </component>
 </project>
