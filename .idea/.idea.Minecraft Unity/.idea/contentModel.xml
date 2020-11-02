@@ -9,11 +9,15 @@
         <e p="Scripts" t="Include">
           <e p="BiomAttributes.cs" t="Include" />
           <e p="Chunk.cs" t="Include" />
+          <e p="CreativeInventory.cs" t="Include" />
           <e p="DebugScreen.cs" t="Include" />
+          <e p="DragAndDrop.cs" t="Include" />
+          <e p="ItemStack.cs" t="Include" />
           <e p="Noise.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="Structure.cs" t="Include" />
           <e p="Toolbar.cs" t="Include" />
+          <e p="UIItemSlot.cs" t="Include" />
           <e p="VoxelData.cs" t="Include" />
           <e p="World.cs" t="Include" />
         </e>

@@ -33,7 +33,13 @@ public class World : MonoBehaviour
 
     public GameObject debugScreen;
 
+    private bool _inUI = false;
+
     private bool isApplyingModifications = false;
+
+    public GameObject creativeInvWindow;
+    public GameObject cursorSlot;
+    public DragAndDrop dragAndDrop;
     private void Start()
     {
         UnityEngine.Random.InitState(seed);
@@ -252,6 +258,29 @@ public class World : MonoBehaviour
         }
 
         return blockTypes[GetVoxel(pos)].isTransparent;
+    }
+
+    public bool inUI
+    {
+        get { return _inUI; }
+        set
+        {
+            // TODO: Remember last slot and return item to it when inv closes 
+            _inUI = value;
+            if (_inUI)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                creativeInvWindow.SetActive(true);
+                cursorSlot.SetActive(true);
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                dragAndDrop.OnSetActive();
+                creativeInvWindow.SetActive(false);
+                cursorSlot.SetActive(false);
+            }
+        }
     }
     
     public byte GetVoxel(Vector3 pos)

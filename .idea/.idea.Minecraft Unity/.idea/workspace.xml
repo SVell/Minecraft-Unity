@@ -12,27 +12,35 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DebugScreen.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Chunk.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DragAndDrop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VoxelData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/World.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Toolbar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Chunk.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIItemSlot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Noise.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BiomAttributes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Toolbar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Structure.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemStack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CreativeInventory.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Noise.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DebugScreen.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Toolbar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VoxelData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BiomAttributes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Structure.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Chunk.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ItemStack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CreativeInventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Toolbar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/World.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIItemSlot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DragAndDrop.cs" />
       </list>
     </option>
   </component>
@@ -86,6 +94,9 @@
       <workItem from="1604084469896" duration="4336000" />
       <workItem from="1604147315009" duration="5994000" />
       <workItem from="1604225281682" duration="5424000" />
+      <workItem from="1604309742937" duration="593000" />
+      <workItem from="1604320767314" duration="4185000" />
+      <workItem from="1604325325706" duration="7967000" />
     </task>
     <servers />
   </component>
@@ -95,9 +106,9 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="WindowStateProjectService">
-    <state x="392" y="182" width="672" height="676" key="search.everywhere.popup" timestamp="1604226550913">
+    <state x="500" y="239" width="672" height="676" key="search.everywhere.popup" timestamp="1604330093453">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="392" y="182" width="672" height="676" key="search.everywhere.popup/0.40.1920.1040/-1920.40.1920.1040@0.40.1920.1040" timestamp="1604226550913" />
+    <state x="500" y="239" width="672" height="676" key="search.everywhere.popup/0.40.1920.1040/-1920.40.1920.1040@0.40.1920.1040" timestamp="1604330093453" />
   </component>
 </project>

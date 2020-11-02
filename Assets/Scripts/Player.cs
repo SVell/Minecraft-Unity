@@ -32,8 +32,8 @@ public class Player : MonoBehaviour
     public Transform placeBlock;
     public float checkIncrement = 0.1f;
     public float reach = 8;
-    
-    public byte selectedBlockIndex = 1;
+
+    public Toolbar toolbar;
 
     private void Start()
     {
@@ -45,22 +45,33 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        GetPlayerInput();
-        PlaceCursorBlock();
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            world.inUI = !world.inUI;
+        }
+        
+        if (!world.inUI)
+        {
+            GetPlayerInput();
+            PlaceCursorBlock();
+        }
     }
 
     private void FixedUpdate()
     {
-        CalculateVelocity();
-        
-        if (jumpRequest)
+        if (!world.inUI)
         {
-            Jump();
-        }
+            CalculateVelocity();
         
-        cam.Rotate(Vector3.right * (-mouseVertical * mouseSensitivity));
-        transform.Rotate(Vector3.up * (mouseHorizontal * mouseSensitivity));
-        transform.Translate(velocity, Space.World);
+            if (jumpRequest)
+            {
+                Jump();
+            }
+        
+            cam.Rotate(Vector3.right * (-mouseVertical * mouseSensitivity));
+            transform.Rotate(Vector3.up * (mouseHorizontal * mouseSensitivity));
+            transform.Translate(velocity, Space.World);
+        }
     }
 
     void Jump()
@@ -138,7 +149,12 @@ public class Player : MonoBehaviour
             }
             if (Input.GetMouseButtonDown(1))
             {
-                world.GetChunkFromVector3(placeBlock.position).EditVoxel(placeBlock.position,selectedBlockIndex);
+                if (toolbar.slots[toolbar.slotIndex].HasItem)
+                {
+                    world.GetChunkFromVector3(placeBlock.position).EditVoxel(placeBlock.position,toolbar.slots[toolbar.slotIndex].itemSlot.stack.id);
+                    toolbar.slots[toolbar.slotIndex].itemSlot.Take(1);
+                }
+                    
             }
         }
     }
