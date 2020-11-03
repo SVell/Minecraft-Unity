@@ -15,6 +15,7 @@
           <e p="ItemStack.cs" t="Include" />
           <e p="Noise.cs" t="Include" />
           <e p="Player.cs" t="Include" />
+          <e p="StandartBlockShader.shader" t="Include" />
           <e p="Structure.cs" t="Include" />
           <e p="Toolbar.cs" t="Include" />
           <e p="UIItemSlot.cs" t="Include" />

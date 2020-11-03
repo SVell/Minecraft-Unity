@@ -15,6 +15,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DragAndDrop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VoxelData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/World.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StandartBlockShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Toolbar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Chunk.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIItemSlot.cs" root0="FORCE_HIGHLIGHTING" />
@@ -33,14 +34,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/VoxelData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BiomAttributes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Structure.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Chunk.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ItemStack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CreativeInventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Toolbar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/World.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIItemSlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DragAndDrop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StandartBlockShader.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Chunk.cs" />
       </list>
     </option>
   </component>
@@ -97,6 +99,8 @@
       <workItem from="1604309742937" duration="593000" />
       <workItem from="1604320767314" duration="4185000" />
       <workItem from="1604325325706" duration="7967000" />
+      <workItem from="1604396363663" duration="1496000" />
+      <workItem from="1604398969115" duration="1823000" />
     </task>
     <servers />
   </component>

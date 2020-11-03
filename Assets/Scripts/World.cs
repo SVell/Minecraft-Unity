@@ -9,6 +9,12 @@ public class World : MonoBehaviour
 {
     public int seed;
     public BiomAttributes biome;
+
+    [Range(0.95f,0)]
+    public float globalLightLevel;
+    public Color day;
+    public Color night;
+    
     
     public Transform player;
     public Vector3 spawnPosition;
@@ -51,6 +57,9 @@ public class World : MonoBehaviour
 
     private void Update()
     {
+        Shader.SetGlobalFloat("GlobalLightLevel",globalLightLevel);
+        Camera.main.backgroundColor = Color.Lerp(day, night, globalLightLevel);
+        
         if (Input.GetKeyDown(KeyCode.F3))
         {
             debugScreen.SetActive(!debugScreen.activeSelf);
