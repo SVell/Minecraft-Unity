@@ -733,6 +733,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: 1488
   biome: {fileID: 11400000, guid: d8b2d53f46df9624cbf6dede30305e2f, type: 2}
+  enableThreading: 1
+  globalLightLevel: 1
+  day: {r: 0, g: 0.54191923, b: 1, a: 0}
+  night: {r: 0.1277832, g: 0, b: 0.5471698, a: 0}
   player: {fileID: 2067524334}
   spawnPosition: {x: 0, y: 0, z: 0}
   material: {fileID: 2100000, guid: 4cc71eaab020c0a4c89b2972f04e1f8f, type: 2}
@@ -741,7 +745,8 @@ MonoBehaviour:
   - blockName: Air
     isSolid: 0
     icon: {fileID: 0}
-    isTransparent: 1
+    renderNeighborFaces: 1
+    transparency: 1
     backFaceTexture: 0
     frontFaceTexture: 0
     topFaceTexture: 0
@@ -751,7 +756,8 @@ MonoBehaviour:
   - blockName: Bedrock
     isSolid: 1
     icon: {fileID: -4219558403781695398, guid: 43ade02eced7b194a86b97a19c38f4fe, type: 3}
-    isTransparent: 0
+    renderNeighborFaces: 0
+    transparency: 0
     backFaceTexture: 9
     frontFaceTexture: 9
     topFaceTexture: 9
@@ -761,7 +767,8 @@ MonoBehaviour:
   - blockName: Stone
     isSolid: 1
     icon: {fileID: 5679390536090785944, guid: 43ade02eced7b194a86b97a19c38f4fe, type: 3}
-    isTransparent: 0
+    renderNeighborFaces: 0
+    transparency: 0
     backFaceTexture: 0
     frontFaceTexture: 0
     topFaceTexture: 0
@@ -771,7 +778,8 @@ MonoBehaviour:
   - blockName: Grass
     isSolid: 1
     icon: {fileID: 5392753449730437660, guid: 43ade02eced7b194a86b97a19c38f4fe, type: 3}
-    isTransparent: 0
+    renderNeighborFaces: 0
+    transparency: 0
     backFaceTexture: 2
     frontFaceTexture: 2
     topFaceTexture: 7
@@ -781,7 +789,8 @@ MonoBehaviour:
   - blockName: Sand
     isSolid: 1
     icon: {fileID: 6181873364862223445, guid: 43ade02eced7b194a86b97a19c38f4fe, type: 3}
-    isTransparent: 0
+    renderNeighborFaces: 0
+    transparency: 0
     backFaceTexture: 10
     frontFaceTexture: 10
     topFaceTexture: 10
@@ -791,7 +800,8 @@ MonoBehaviour:
   - blockName: Dirt
     isSolid: 1
     icon: {fileID: -6943373833598557, guid: 43ade02eced7b194a86b97a19c38f4fe, type: 3}
-    isTransparent: 0
+    renderNeighborFaces: 0
+    transparency: 0
     backFaceTexture: 1
     frontFaceTexture: 1
     topFaceTexture: 1
@@ -801,7 +811,8 @@ MonoBehaviour:
   - blockName: Wood
     isSolid: 1
     icon: {fileID: -7538633921802359561, guid: 43ade02eced7b194a86b97a19c38f4fe, type: 3}
-    isTransparent: 0
+    renderNeighborFaces: 0
+    transparency: 0
     backFaceTexture: 5
     frontFaceTexture: 5
     topFaceTexture: 6
@@ -811,7 +822,8 @@ MonoBehaviour:
   - blockName: Plank
     isSolid: 1
     icon: {fileID: -9138616440249935319, guid: 43ade02eced7b194a86b97a19c38f4fe, type: 3}
-    isTransparent: 0
+    renderNeighborFaces: 0
+    transparency: 0
     backFaceTexture: 4
     frontFaceTexture: 4
     topFaceTexture: 4
@@ -821,7 +833,8 @@ MonoBehaviour:
   - blockName: Brick
     isSolid: 1
     icon: {fileID: 448961105294916356, guid: 43ade02eced7b194a86b97a19c38f4fe, type: 3}
-    isTransparent: 0
+    renderNeighborFaces: 0
+    transparency: 0
     backFaceTexture: 11
     frontFaceTexture: 11
     topFaceTexture: 11
@@ -831,7 +844,8 @@ MonoBehaviour:
   - blockName: Cobblestone
     isSolid: 1
     icon: {fileID: -1501523072523359806, guid: 43ade02eced7b194a86b97a19c38f4fe, type: 3}
-    isTransparent: 0
+    renderNeighborFaces: 0
+    transparency: 0
     backFaceTexture: 8
     frontFaceTexture: 8
     topFaceTexture: 8
@@ -841,7 +855,8 @@ MonoBehaviour:
   - blockName: Glass
     isSolid: 1
     icon: {fileID: -2472154162008021039, guid: bc3730bd17f28a14f8f8eee973265b66, type: 3}
-    isTransparent: 1
+    renderNeighborFaces: 1
+    transparency: 1
     backFaceTexture: 3
     frontFaceTexture: 3
     topFaceTexture: 3
@@ -851,7 +866,8 @@ MonoBehaviour:
   - blockName: Leaf
     isSolid: 1
     icon: {fileID: -2472154162008021039, guid: bc3730bd17f28a14f8f8eee973265b66, type: 3}
-    isTransparent: 0
+    renderNeighborFaces: 1
+    transparency: 0.8
     backFaceTexture: 16
     frontFaceTexture: 16
     topFaceTexture: 16
@@ -1711,7 +1727,7 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
