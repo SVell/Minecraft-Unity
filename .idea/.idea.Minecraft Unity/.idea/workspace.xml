@@ -34,15 +34,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BiomAttributes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Structure.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ItemStack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CreativeInventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Toolbar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIItemSlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DragAndDrop.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StandartBlockShader.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/VoxelData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/dgf.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Chunk.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/VoxelData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/World.cs" />
       </list>
     </option>
@@ -111,7 +111,7 @@
       <workItem from="1604559736410" duration="11000" />
       <workItem from="1604559766460" duration="148000" />
       <workItem from="1604559955877" duration="179000" />
-      <workItem from="1604575432738" duration="1817000" />
+      <workItem from="1604575432738" duration="3245000" />
     </task>
     <servers />
   </component>

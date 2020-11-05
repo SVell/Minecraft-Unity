@@ -24,7 +24,6 @@ public class Player : MonoBehaviour
     public float sprintSpeed = 6f;
     public float jumpForce = 5f;
     public float gravity = -9.8f;
-    public float mouseSensitivity = 3;
 
     public float playerWidth = 0.3f;
 
@@ -68,8 +67,8 @@ public class Player : MonoBehaviour
                 Jump();
             }
         
-            cam.Rotate(Vector3.right * (-mouseVertical * mouseSensitivity));
-            transform.Rotate(Vector3.up * (mouseHorizontal * mouseSensitivity));
+            cam.Rotate(Vector3.right * (-mouseVertical * world.settings.mouseSensitivity));
+            transform.Rotate(Vector3.up * (mouseHorizontal * world.settings.mouseSensitivity));
             transform.Translate(velocity, Space.World);
         }
     }

@@ -731,9 +731,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7576514cb1bc043b2140dc48d04e0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seed: 1488
+  settings:
+    version: 0.1
+    viewDistance: 5
+    mouseSensitivity: 5
+    seed: 322
   biome: {fileID: 11400000, guid: d8b2d53f46df9624cbf6dede30305e2f, type: 2}
-  enableThreading: 1
   globalLightLevel: 1
   day: {r: 0, g: 0.54191923, b: 1, a: 0}
   night: {r: 0.1277832, g: 0, b: 0.5471698, a: 0}
@@ -2625,7 +2628,6 @@ MonoBehaviour:
   sprintSpeed: 6
   jumpForce: 5
   gravity: -9.8
-  mouseSensitivity: 5
   playerWidth: 0.3
   highlightBlock: {fileID: 1756999666}
   placeBlock: {fileID: 43408630}
