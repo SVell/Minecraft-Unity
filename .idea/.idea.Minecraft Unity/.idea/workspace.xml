@@ -40,8 +40,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UIItemSlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DragAndDrop.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StandartBlockShader.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Chunk.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VoxelData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/dgf.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Chunk.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/World.cs" />
       </list>
     </option>
@@ -58,8 +59,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -103,6 +105,13 @@
       <workItem from="1604398969115" duration="3135000" />
       <workItem from="1604474575560" duration="62000" />
       <workItem from="1604474655954" duration="5028000" />
+      <workItem from="1604557567197" duration="69000" />
+      <workItem from="1604557717407" duration="57000" />
+      <workItem from="1604559471793" duration="201000" />
+      <workItem from="1604559736410" duration="11000" />
+      <workItem from="1604559766460" duration="148000" />
+      <workItem from="1604559955877" duration="179000" />
+      <workItem from="1604575432738" duration="1817000" />
     </task>
     <servers />
   </component>
@@ -112,6 +121,10 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="WindowStateProjectService">
+    <state x="461" y="202" key="SettingsEditor" timestamp="1604557770721">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="461" y="202" key="SettingsEditor/0.40.1920.1040/-1920.40.1920.1040@0.40.1920.1040" timestamp="1604557770721" />
     <state x="500" y="239" width="672" height="676" key="search.everywhere.popup" timestamp="1604330093453">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
