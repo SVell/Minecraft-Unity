@@ -1,4 +1,4 @@
-﻿Shader "Minecraft/Blocks"
+﻿Shader "Minecraft/TransparentBlocks"
 {
     Properties
     {
@@ -7,7 +7,7 @@
     
     SubShader
     {
-        Tags {"RenderType"="Opaque"}
+        Tags {"Queue"="AlphaTest" "IgnoreProjector"="True" "RenderType"="TransparentCutout"}
         LOD 100
         Lighting Off
         
@@ -61,7 +61,7 @@
                     
                     
                     
-                    //clip(col.a - 1);
+                    clip(col.a - 1);
                     col = lerp(col, float4(0,0,0,1), shade);
                     
                     return col;

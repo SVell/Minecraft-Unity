@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -51,7 +51,7 @@ LightmapSettings:
     m_IndirectOutputScale: 1
     m_AlbedoBoost: 1
     m_EnvironmentLightingMode: 0
-    m_EnableBakedLightmaps: 1
+    m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
     serializedVersion: 12
@@ -743,7 +743,7 @@ MonoBehaviour:
   player: {fileID: 2067524334}
   spawnPosition: {x: 0, y: 0, z: 0}
   material: {fileID: 2100000, guid: 4cc71eaab020c0a4c89b2972f04e1f8f, type: 2}
-  transparentMaterial: {fileID: 2100000, guid: 55b2cb8072e78bb4099c89f5338a690b, type: 2}
+  transparentMaterial: {fileID: 2100000, guid: a09ccebd5ff65d14fb3c6993ba016d18, type: 2}
   blockTypes:
   - blockName: Air
     isSolid: 0
@@ -1744,7 +1744,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.1
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -1772,7 +1772,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.8, z: 0}
+  m_LocalPosition: {x: 0, y: 1.8, z: -0.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2067524334}
@@ -1795,7 +1795,6 @@ GameObject:
   - component: {fileID: 1232925400}
   - component: {fileID: 1232925403}
   - component: {fileID: 1232925402}
-  - component: {fileID: 1232925401}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1817,19 +1816,6 @@ Transform:
   m_Father: {fileID: 43408630}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1232925401
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1232925399}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1232925402
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2377,7 +2363,6 @@ GameObject:
   - component: {fileID: 2012571558}
   - component: {fileID: 2012571561}
   - component: {fileID: 2012571560}
-  - component: {fileID: 2012571559}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -2399,19 +2384,6 @@ Transform:
   m_Father: {fileID: 1756999666}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2012571559
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2012571557}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2012571560
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2628,7 +2600,7 @@ MonoBehaviour:
   sprintSpeed: 6
   jumpForce: 5
   gravity: -9.8
-  playerWidth: 0.3
+  playerWidth: 0.25
   highlightBlock: {fileID: 1756999666}
   placeBlock: {fileID: 43408630}
   checkIncrement: 0.1

@@ -18,6 +18,7 @@
           <e p="StandartBlockShader.shader" t="Include" />
           <e p="Structure.cs" t="Include" />
           <e p="Toolbar.cs" t="Include" />
+          <e p="TransparentBlockShader.shader" t="Include" />
           <e p="UIItemSlot.cs" t="Include" />
           <e p="VoxelData.cs" t="Include" />
           <e p="World.cs" t="Include" />
