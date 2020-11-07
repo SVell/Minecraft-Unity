@@ -12,7 +12,7 @@ public class World : MonoBehaviour
     public Settings settings;
     
     [Header("World Generation")]
-    public BiomAttributes biome;
+    public BiomAttributes[] biomes;
     
     
     [Range(0,1)]
@@ -203,13 +203,20 @@ public class World : MonoBehaviour
 
                 ChunkCoord c = GetChunkCoordFromVector3(v.position);
 
-                if (chunks[c.x, c.z] == null)
-                {
-                    chunks[c.x, c.z] = new Chunk(c, this);
-                    chunksToCreate.Add(c);
+                try
+                { 
+                    if (chunks[c.x, c.z] == null)
+                    {
+                        chunks[c.x, c.z] = new Chunk(c, this);
+                        chunksToCreate.Add(c);
+                    }
+                    
+                    chunks[c.x, c.z].modifications.Enqueue(v);
                 }
-
-                chunks[c.x, c.z].modifications.Enqueue(v);
+                catch (Exception e)
+                {
+                    Debug.LogWarning("Index out of bounds bug");
+                }
             }
         }
 
@@ -352,15 +359,52 @@ public class World : MonoBehaviour
         if (yPos == 0)
             return 1;
         
-        // BASIC TERRAIN PASS
+        
+        // BiomSelectionPass
+        int solidGroundHeight = 42;
+        float sumOfHeights = 0;
+        int count = 0;
+        float strongestWeight = 0;
+        int strongestBiomeIndex = 0;
 
-        int terrainHeight = Mathf.FloorToInt(biome.terrainHeight * Noise.Get2DPerlin(new Vector2(pos.x, pos.z), 0f, biome.terrainScale) + biome.solidGroundHeight);
+        for (int i = 0; i < biomes.Length; i++)
+        {
+            float weight = Noise.Get2DPerlin(new Vector2(pos.x, pos.z), biomes[i].offset, biomes[i].scale);
+            
+            // Keep track of wich weight is stronger
+            if (weight > strongestWeight)
+            {
+                strongestWeight = weight;
+                strongestBiomeIndex = i;
+            }
+            
+            // Get the height of the terrain (for the current biome) and multiply by its weight
+            float height = biomes[i].terrainHeight * Noise.Get2DPerlin(new Vector2(pos.x, pos.z), 0f, biomes[i].terrainScale) * weight;
+            
+            // If the height value is greater 0 add it to the sum of heights
+            if (height > 0)
+            {
+                sumOfHeights += height;
+                count++;
+            }
+        }
+        
+        // Set biome to the one with strongest weight
+        BiomAttributes biome = biomes[strongestBiomeIndex];
+            
+        // Get the average of the heights
+        sumOfHeights /= count;
+        int terrainHeight = Mathf.FloorToInt(solidGroundHeight + sumOfHeights);
+        
+        //BiomAttributes biome = biomes[index];
+        
+        // BASIC TERRAIN PASS
         byte voxelValue = 0;
 
         if (yPos == terrainHeight)
-            voxelValue = 3;
+            voxelValue = biome.surfaceBlock;
         else if (yPos < terrainHeight && yPos > terrainHeight - 4)
-            voxelValue = 5;
+            voxelValue = biome.subSurfaceBlock;
         else if (yPos > terrainHeight)
             return 0;
         else
@@ -383,16 +427,16 @@ public class World : MonoBehaviour
         }
         
         // TREE PASS
-        if (yPos == terrainHeight)
+        if (yPos == terrainHeight && biome.placeMajorFlora)
         {
-            if (Noise.Get2DPerlin(new Vector2(pos.x, pos.z), 0, biome.treeZoneScale) > biome.treeZoneThreshold)
+            if (Noise.Get2DPerlin(new Vector2(pos.x, pos.z), 0, biome.majorFloraZoneScale) > biome.majorFloraZoneThreshold)
             {
-                if (Noise.Get2DPerlin(new Vector2(pos.x, pos.z), 2000, biome.treePlacementScale) >
+                if (Noise.Get2DPerlin(new Vector2(pos.x, pos.z), 2000, biome.majorFloraPlacementScale) >
                     biome.treePlacementThreshold)
                 {
                     lock (modifications)
                     {
-                        modifications.Enqueue(Structure.MakeTree(pos,biome.minTreeHeight,biome.maxTreeHeight));
+                        modifications.Enqueue(Structure.GenerateMajorFlora(biome.majorFloraIndex, pos,biome.minTreeHeight,biome.maxTreeHeight));
                     }
                 }
             }

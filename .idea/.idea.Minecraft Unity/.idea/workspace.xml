@@ -32,8 +32,6 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Noise.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DebugScreen.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BiomAttributes.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Structure.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ItemStack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CreativeInventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Toolbar.cs" />
@@ -44,8 +42,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Chunk.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TransparentBlockShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StandartBlockShader.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/World.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Structure.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BiomAttributes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World.cs" />
       </list>
     </option>
   </component>
@@ -115,6 +115,7 @@
       <workItem from="1604559955877" duration="179000" />
       <workItem from="1604575432738" duration="3245000" />
       <workItem from="1604671102612" duration="3669000" />
+      <workItem from="1604754738572" duration="5340000" />
     </task>
     <servers />
   </component>
