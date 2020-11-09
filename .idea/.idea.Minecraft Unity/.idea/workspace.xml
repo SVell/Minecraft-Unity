@@ -21,7 +21,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemStack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Chunk.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/AtlasPacker.asmdef" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StandartBlockShader.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/AtlasPacker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CreativeInventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/World.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Toolbar.cs" root0="FORCE_HIGHLIGHTING" />
@@ -46,6 +48,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Structure.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BiomAttributes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/World.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/AtlasPacker.cs" />
       </list>
     </option>
   </component>
@@ -116,6 +119,7 @@
       <workItem from="1604575432738" duration="3245000" />
       <workItem from="1604671102612" duration="3669000" />
       <workItem from="1604754738572" duration="5340000" />
+      <workItem from="1604906268667" duration="2791000" />
     </task>
     <servers />
   </component>
