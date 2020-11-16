@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.UI;
 using UnityEngine;
 
 public static class VoxelData
@@ -12,6 +13,8 @@ public static class VoxelData
     public static float minLightLevel = 0.1f;
     public static float maxLightLevel = 0.9f;
     public static float lightFalloff = 0.08f;
+
+    public static int seed;
     
     public static int WorldSizeInVoxels
     {
